@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio</title>
+	<link rel="icon" href="images/logo.png">
+	<!-- Bootstrap 4.0 CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle,call,counter_1,counter_2,counter_3,counter_4,counter_5,counter_6,counter_7,counter_8,counter_9,delete,mail,shopping_cart">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.canastacounter.js"></script>
+</head>
+
+<body>	
+<!---header------->
+
+	<header>
+		<nav class="navbar navbar-expand-sm">
+			<div class="container-fluid justify-content-around">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Pixka Logo">
+					</a>
+				</div>
+	
+				<ul class="navbar-nav">
+					<li class="active nav-item "><a href="index.html" class="btn disabled">INICIO</a></li>
+					<li class="nav-item"><a href="productos.html" class="btn">PRODUCTOS</a></li>
+					<li class="nav-item"><a href="pick-up.html" class="btn">PICK-UP</a></li>
+					<li class="nav-item"><a href="contacto.html" class="btn">CONTACTO</a></li>
+				</ul>
+	
+				<div class="headerCarrito">
+					<a href="pick-up.html">
+						<span class="material-symbols-outlined">
+						shopping_cart
+						</span>
+						<span id="counter" class="material-symbols-outlined">
+							
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+<!---contenido------>
+
+	<main>
+		<section class="sec1 d-flex align-items-center justify-content-center" style="height: 500px;">
+			<div class="nosotros pt-0">
+				<h3>NOSOTROS</h3>
+				<p>
+					Pixka es una marca comprometida en brindar a nuestros clientes una experiencia de compra confiable y cercana, por ello, es importante para nosotros que nuestros usuarios nos conozcan.
+				</p>
+			</div>
+			<div id="carouselExampleIndicators" class="carousel slide w-100 h-100" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner h-100">
+					<div class="carousel-item active h-100">
+						<img class="d-block w-100 h-100" src="./images/nosotros.jpg" alt="First slide">
+					</div>
+					<div class="carousel-item h-100">
+						<img class="d-block w-100 h-100" src="./images/grano.jpg" alt="Second slide">
+					</div>
+					<div class="carousel-item h-100">
+						<img class="d-block w-100 h-100" src="./images/favorite-grains.jpg" alt="Third slide">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+
+		<section class="sec2" style="padding-top: 100px;">
+			<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+				<div class="contentsec2">
+			        <div class="about">
+			            <h4>Misión</h4>
+			            <p>Nos enfocamos en brindar variedad de productos de 
+			            <br>alta calidad, desde gourmet, a granel y herbolaría,
+			            <br>priorizando el bienestar de nuestro cliente a través de
+			            <br>una experiencia de compra auténtica y confiable.</p>
+			        </div>
+			        <div class="about">
+			            <h4>Visión</h4>
+			            <p>Ser una empresa reconocida a nivel metrópoli como
+			            <br>líderes en la distribución de alternativas versátiles
+			        	<br>de consumo, destacándonos por nuestra calidad y
+			        	<br>compromiso con nuestros clientes.</p>
+			        </div>
+			    </div>
+			    <div class="about">
+			        <h4>Valores</h4>
+			        <p>Calidad, compromiso y transparencia en cada compra.</p>
+			    </div>
+			</div>  
+		</section>
+	</main>	
+
+<!---footer---------->	
+
+	<footer>
+		<div id="fila">
+			<div id="logo">
+				<img style="width: 150px" src="images/logo.png">
+			</div>
+			<div id="contacto">
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">call</span> 
+					(+52) 222 580 3071 </p>
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">mail</span>
+					lapixka.puebla01@gmail.com</p>
+				<p style="margin-bottom: 10px"><strong> Redes </strong></p>
+				<p>
+					<a href="https://es-la.facebook.com/"><img style="margin-right: 15px;" src="images/icons/facebook.webp"></a>  <a href="https://www.instagram.com/"><img style="margin-right: 15px;" src="images/icons/instagram.png"></a>  <a href="https://bsky.app/"><img src="images/icons/bsky.png"></a>
+				</p>
+
+			</div>
+		</div>
+	</footer>
+	
+	<div id="copy">
+			<p> Todos los derechos reservados por La Pixka 2026 | <a href="terminos.html">Términos y Condiciones</a> | <a href="avisopriv.html">Aviso de privacidad</a></p>
+	</div>
+</body>
+</html>

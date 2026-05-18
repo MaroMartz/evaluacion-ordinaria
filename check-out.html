@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Check-out</title>
+	<link rel="icon" href="images/logo.png">
+
+		<!-- Bootstrap 4.0 CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle,call,counter_1,counter_2,counter_3,counter_4,counter_5,counter_6,counter_7,counter_8,counter_9,delete,mail,shopping_cart">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+		<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
+		<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validacion.js"></script>
+	<script type="text/javascript" src="js/jquery.pick-up.js"></script>
+	<script type="text/javascript" src="js/jquery.canastacounter.js"></script>
+</head>
+
+<body>	
+
+<!---header------->
+
+	<header>
+		<nav class="navbar navbar-expand-sm">
+			<div class="container-fluid justify-content-around">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Pixka Logo">
+					</a>
+				</div>
+	
+				<ul class="navbar-nav">
+					<li class="nav-item "><a href="index.html" class="btn">INICIO</a></li>
+					<li class="nav-item"><a href="productos.html" class="btn">PRODUCTOS</a></li>
+					<li class="active nav-item"><a href="pick-up.html" class="btn disabled">PICK-UP</a></li>
+					<li class="nav-item"><a href="contacto.html" class="btn">CONTACTO</a></li>
+				</ul>
+	
+				<div class="headerCarrito">
+					<a href="pick-up.html">
+						<span class="material-symbols-outlined">
+							shopping_cart
+						</span>
+						<span id="counter" class="material-symbols-outlined">
+							
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+<!---contenido------>
+
+	<section class="sec1" style="height: auto;">
+		<div class="sec2-productos">
+			<h3>CHECK-OUT</h3>
+		</div>
+
+		<div id="sec1Container" class="container d-flex">
+
+			<div class="contentsec2 container-fluid pt-4" style="padding-left: 0; min-width: 50%;">
+		        <div class="canasta w-100">
+		            <table>
+		            	<tr id="tableHeader">
+		            		<th>MI CANASTA</th>
+		            	</tr>
+						<tr class="h-25">
+							<td id="total" class="h-100 p-2 pl-3 font-weight-bold">
+								TOTAL: $0
+							</td>
+						</tr>
+		            </table>
+		        </div>
+		    </div>
+			<div class="row">
+
+				<div class="col">
+					<form action="" class="form-inline flex-column flex-md-row needs-validation" novalidate>					
+						<div class="form-group mx-2">
+							<label for="" class="d-sm-none d-md-block mx-2">Nombre:</label>	
+							<input type="text" placeholder="Ingresa tu nombre" class="form-control" required>
+							<div class="valid-feedback">
+								Se ve bien!
+							</div>
+							<div class="invalid-feedback">
+								Por favor ingresa tu nombre.
+							</div>
+						</div>				
+						
+						<div class="form-group mx-2">	
+							<label for="" class="d-sm-none d-md-block mx-2">Teléfono:</label>	
+							<input type="tel" placeholder="Ingresa tu teléfono" class="form-control" required>
+							<div class="valid-feedback">
+								Se ve bien!
+							</div>
+							<div class="invalid-feedback">
+								Por favor ingresa tu teléfono.
+							</div>
+						</div>
+
+						<div class="form-group mx-2 w-75 mt-3">	
+							<label for="" class="d-sm-none d-md-block mx-2">Instrucciones extra:</label>	
+							<textarea placeholder="Ingresa tus instrucciones extra" rows class="form-control w-100 mt-2"></textarea>
+						</div>
+
+						<div class="form-group mx-2 mt-2">
+							<button id="checkOut" class="btn btn-primary px-5" type="submit">Enviar</button>
+						</div>											
+					</form>
+				</div>	
+
+			</div>	
+		</div>
+
+	</section>
+
+<!---footer---------->	
+
+	<footer>
+		<div id="fila">
+			<div id="logo">
+				<img style="width: 150px" src="images/logo.png">
+			</div>
+			<div id="contacto">
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">call</span> 
+					(+52) 222 580 3071 </p>
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">mail</span>
+					lapixka.puebla01@gmail.com</p>
+				<p style="margin-bottom: 10px"><strong> Redes </strong></p>
+				<p>
+					<a href="https://es-la.facebook.com/"><img style="margin-right: 15px;" src="images/icons/facebook.webp"></a>  <a href="https://www.instagram.com/"><img style="margin-right: 15px;" src="images/icons/instagram.png"></a>  <a href="https://bsky.app/"><img src="images/icons/bsky.png"></a>
+				</p>
+
+			</div>
+		</div>
+	</footer>
+	
+	<div id="copy">
+			<p> Todos los derechos reservados por La Pixka 2026 | <a href="terminos.html">Términos y Condiciones</a> | <a href="avisopriv.html">Aviso de privacidad</a></p>
+	</div>
+
+</body>
+</html>

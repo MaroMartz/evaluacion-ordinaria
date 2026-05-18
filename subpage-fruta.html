@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Productos | Fruta Deshidratada</title>
+	<link rel="icon" href="images/logo.png">
+
+	<!-- Bootstrap 4.0 CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_circle,call,counter_1,counter_2,counter_3,counter_4,counter_5,counter_6,counter_7,counter_8,counter_9,mail,shopping_cart">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.productos.js"></script>
+	<script type="text/javascript" src="js/jquery.canastacounter.js"></script>
+</head>
+
+<body>
+	
+<!---header------->
+
+	<header>
+		<nav class="navbar navbar-expand-sm">
+			<div class="container-fluid justify-content-around">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="Pixka Logo">
+					</a>
+				</div>
+	
+				<ul class="navbar-nav">
+					<li class="active nav-item "><a href="index.html" class="btn">INICIO</a></li>
+					<li class="nav-item"><a href="productos.html" class="btn btnActive">PRODUCTOS</a></li>
+					<li class="nav-item"><a href="pick-up.html" class="btn">PICK-UP</a></li>
+					<li class="nav-item"><a href="contacto.html" class="btn">CONTACTO</a></li>
+				</ul>
+	
+				<div class="headerCarrito">
+					<a href="pick-up.html">
+						<span class="material-symbols-outlined">
+							shopping_cart
+						</span>
+						<span id="counter" class="material-symbols-outlined">
+							
+						</span>
+					</a>
+				</div>
+			</div>
+
+		</nav>
+	</header>
+
+<!---contenido------>
+
+	<main>
+		<section class="sec1">
+			<div class="imgsec1" style="background-image: url('images/FRUTA/T4.jpg');"></div>
+			<div class="txtsec1">
+				<h3>FRUTA DESHIDRATADA</h3>
+				<p>
+					¡Tenemos todo lo que buscas para consentir tu paladar!
+				</p>
+			</div>
+		</section>
+
+		<section class="subpageproductos">
+
+	        <div class="card" data-precio="80">
+        		<img class="card-img-top" src="images/FRUTA/28.jpg" alt="Arandano">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center">Arándano Ocean</h1>
+	            		<p class="card-text">
+	            		Arándanos deshidratados endulzados, con un sabor agridulce intenso. Son ricos en antioxidantes y vitamina C.
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+						<div class="column">
+							<p class="card-text text-center">PRECIO</p>
+	            			<h1 class="text-center precio">$150</h1>
+	            		</div>
+						<div class="column">
+							<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+	            				<option value="0.75">750g</option>	
+								<option value="0.5">500g</option>
+								<option value="0.25">250g</option>
+								<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+		    </div>
+
+	        <div class="card" data-precio="240">
+        		<img class="card-img-top" src="images/FRUTA/29.jpg" alt="Cereza">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center">Cereza roja-verde</h1>
+	            		<p class="card-text">
+	            		Cerezas deshidratadas y confitadas, de colores vibrantes y sabor dulce. <br><br>
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text text-center">PRECIO</p>
+	            			<h1 class="text-center precio">$240</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+	            				<option value="0.75">750g</option>	
+								<option value="0.5">500g</option>
+								<option value="0.25">250g</option>
+								<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+            		<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>
+
+	        <div class="card" data-precio="300">
+        		<img class="card-img-top" src="images/FRUTA/30.jpg" alt="Chabacano">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center">Chabacano<br><br></h1>
+	            		<p class="card-text">
+	            		Trozos de chabacano seco, ricos en fibra, vitamina A y antioxidantes. <br><br>
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text text-center">PRECIO</p>
+	            			<h1 class="text-center precio">$300</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+	            				<option value="0.75">750g</option>	
+								<option value="0.5">500g</option>
+								<option value="0.25">250g</option>
+								<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>
+
+	        <div class="card" data-precio="200">
+        		<img class="card-img-top" src="images/FRUTA/31.jpg" alt="ciruela">
+        		<div class="card-body">
+		        	<h1 class="card-title text-center">Ciruela sin hueso</h1>
+		        		<p class="card-text">
+		        		Ciruelas deshidratadas y sin semilla, conocidas por sus beneficios digestivos gracias a su alto contenido de fibra.
+		        		</p>
+		        	<div class="row justify-content-around pt-3">
+		        		<div class="column">
+		        			<p class="card-text">PRECIO</p>
+		        			<h1 class="text-center precio">$200</h1>
+		        		</div>
+		        		<div class="column">
+		        			<p class="card-text">ELIJA CANTIDAD</p>
+		        			<select class="w-100 text-center" name="cantidad">
+		        				<option value="1">1kg</option>	
+	            				<option value="0.75">750g</option>	
+								<option value="0.5">500g</option>
+								<option value="0.25">250g</option>
+								<option value="0.1">100g</option>
+		        			</select>
+		        		</div>
+		        	</div>
+		        </div>
+		        	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>
+
+	        <div class="card" data-precio="320">
+        		<img class="card-img-top" src="images/FRUTA/32.jpg" alt="coco">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center" style="letter-spacing: -1px;">Coco orgánico</h1>
+	            		<p class="card-text">
+	            		Láminas o trozos de coco seco sin aditivos ni endulzantes; aportan grasas saludables y un delicioso sabor tropical.
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text">PRECIO</p>
+	            			<h1 class="text-center precio">$320</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+		            				<option value="0.75">750g</option>	
+									<option value="0.5">500g</option>
+									<option value="0.25">250g</option>
+									<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>
+
+	        <div class="card" data-precio="200">
+        		<img class="card-img-top" src="images/FRUTA/33.jpg" alt="datil">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center">Dátil</h1>
+	            		<p class="card-text">
+	            		Fruto dulce y energético, es un snack rico con alto contenido en fibra y minerales.<br><br>
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text">PRECIO</p>
+	            			<h1 class="text-center precio">$200</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+		            				<option value="0.75">750g</option>	
+									<option value="0.5">500g</option>
+									<option value="0.25">250g</option>
+									<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>
+
+	        <div class="card" data-precio="220">
+        		<img class="card-img-top" src="images/FRUTA/34.jpg" alt="manzana">
+        		<div class="card-body">
+	            	<h1 class="card-title text-center">Manzana</h1>
+	            		<p class="card-text">
+	            		Rodajas de manzana seca, con un sabor dulce y textura crujiente o suave.<br><br>
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text">PRECIO</p>
+	            			<h1 class="text-center precio">$220</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="card-text">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+		            				<option value="0.75">750g</option>	
+									<option value="0.5">500g</option>
+									<option value="0.25">250g</option>
+									<option value="0.1">100g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+						AÑADIR A LA CESTA
+						</div>
+	        </div>
+
+	        <div class="card" data-precio="180">
+        		<img class="card-img-top" src="images/FRUTA/35.jpg" alt="Fruta">
+        		<div class="card-body">
+	            	<h1>Fruta picada</h1>
+	            		<p class="card-text">
+	            		Mezcla de diversas frutas deshidratadas y nueces variadas, perecto para recuperar energía.<br><br>
+	            		</p>
+	            	<div class="row justify-content-around pt-3">
+	            		<div class="column">
+	            			<p class="card-text">PRECIO POR KILO</p>
+	            			<h1 class="text-center precio">$180</h1>
+	            		</div>
+	            		<div class="column">
+	            			<p class="column">ELIJA CANTIDAD</p>
+	            			<select class="w-100 text-center" name="cantidad">
+	            				<option value="1">1kg</option>	
+		            				<option value="0.75">750g</option>	
+									<option value="0.5">500g</option>
+									<option value="0.25">250g</option>
+									<option value="0.1">100g</option>
+								<option value="50g">50g</option>
+	            			</select>
+	            		</div>
+	            	</div>
+	            </div>
+	            	<div class="card-footer d-flex text-center align-items-center justify-content-center">
+					AÑADIR A LA CESTA
+					</div>
+	        </div>	        
+	    </section>
+	</main>	
+
+<!---paginador---------->	
+	<nav class="d-flex justify-content-center mt-4" aria-label="Navigacion de pagina">
+			<ul class="pagination">
+				<li class="page-item"><a class="page-link" href="subpage-granos.html">Primero</a></li>
+				<li class="page-item"><a class="page-link" href="subpage-harinas.html">Atrás</a></li>
+				<li class="page-item"><a class="page-link" href="subpage-especias.html">Siguiente</a></li>
+				<li class="page-item"><a class="page-link" href="subpage-herbolaria.html">Último</a></li>
+			</ul>
+		</nav>
+	</main>	
+
+<!---footer---------->	
+	<footer>
+		<div id="fila">
+			<div id="logo">
+				<img style="width: 150px" src="images/logo.png">
+			</div>
+			<div id="contacto">
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">call</span> 
+					(+52) 222 580 3071 </p>
+				<p><strong> Contacto </strong></p>
+					<p style="font-size: 18px;"> 
+						<span class="material-symbols-outlined">mail</span>
+					lapixka.puebla01@gmail.com</p>
+				<p style="margin-bottom: 10px"><strong> Redes </strong></p>
+				<p>
+					<a href="https://es-la.facebook.com/"><img style="margin-right: 15px;" src="images/icons/facebook.webp"></a>  <a href="https://www.instagram.com/"><img style="margin-right: 15px;" src="images/icons/instagram.png"></a>  <a href="https://bsky.app/"><img src="images/icons/bsky.png"></a>
+				</p>
+
+			</div>
+		</div>
+	</footer>
+	
+	<div id="copy">
+			<p> Todos los derechos reservados por La Pixka 2026 | <a href="terminos.html">Términos y Condiciones</a> | <a href="avisopriv.html">Aviso de privacidad</a></p>
+	</div>
+	
+</body>
+</html>
